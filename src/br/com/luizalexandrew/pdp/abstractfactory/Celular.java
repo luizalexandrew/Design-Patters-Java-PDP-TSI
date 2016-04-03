@@ -4,9 +4,8 @@ public abstract class Celular {
 	
 	String nome;
 	
-	public void getNome() {
+	public void imprimirNome() {
 		System.out.println(nome);
 	}
-	
-	
+		
 }

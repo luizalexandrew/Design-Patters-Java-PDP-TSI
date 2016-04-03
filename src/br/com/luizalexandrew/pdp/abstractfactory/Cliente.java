@@ -9,14 +9,15 @@ public class Cliente {
 		Celular lumia = montarCelular("Lumia");
 		Celular galaxy = montarCelular("Galaxy S7");
 
-		moto.getNome();
-		iphone.getNome();
-		lumia.getNome();
-		galaxy.getNome();
+		moto.imprimirNome();
+		iphone.imprimirNome();
+		lumia.imprimirNome();
+		galaxy.imprimirNome();
 
 	}
 
 	public static Celular montarCelular(String nome) {
+		
 		Celular cf = null;
 		switch (nome) {
 		case "Moto X":
@@ -35,5 +36,6 @@ public class Cliente {
 			break;
 		}
 		return cf;
+		
 	}
 }
