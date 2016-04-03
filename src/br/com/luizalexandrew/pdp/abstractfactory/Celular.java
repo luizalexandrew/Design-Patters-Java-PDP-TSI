@@ -7,5 +7,6 @@ public abstract class Celular {
 	public void imprimirNome() {
 		System.out.println(nome);
 	}
-		
+	
+	//Abstract Methods Here	
 }
