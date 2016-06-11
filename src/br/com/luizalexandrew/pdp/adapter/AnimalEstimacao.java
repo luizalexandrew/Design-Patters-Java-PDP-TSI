@@ -1,4 +1,4 @@
-package br.com.luizalexandrew.pdp.adaptor;
+package br.com.luizalexandrew.pdp.adapter;
 
 public abstract class AnimalEstimacao{
 	
