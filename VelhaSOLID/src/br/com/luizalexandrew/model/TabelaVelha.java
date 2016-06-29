@@ -3,9 +3,10 @@ package br.com.luizalexandrew.model;
 public class TabelaVelha implements Tabela{
 	
 	private final int tamanho = 3;
-	private Campo campos[][] = new Campo[3][3];
+	private Campo campos[][];
 	
 	public TabelaVelha(Campo campo) {
+		campos = new Campo[tamanho][tamanho];
 		init(campo);
 	}
 
@@ -34,6 +35,17 @@ public class TabelaVelha implements Tabela{
 				System.out.print(campos[i][y].getMarca());
 			}
 		}
+	}
+
+	@Override
+	public void setCampos(Campo campos[][]) {
+		this.campos = campos;
+		
+	}
+
+	@Override
+	public int getTamanho() {
+		return tamanho;
 	}
 	
 	

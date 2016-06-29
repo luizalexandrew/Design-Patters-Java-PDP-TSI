@@ -1,44 +1,31 @@
 package br.com.luizalexandrew.controller;
 
-
-
+import br.com.luizalexandrew.model.Campo;
+import br.com.luizalexandrew.model.CampoVelha;
+import br.com.luizalexandrew.model.Jogador;
+import br.com.luizalexandrew.model.JogadorVelha;
+import br.com.luizalexandrew.model.Tabela;
+import br.com.luizalexandrew.model.TabelaVelha;
+import br.com.luizalexandrew.model.Validador;
+import br.com.luizalexandrew.model.ValidadorVelha;
+import br.com.luizalexandrew.view.JogoVelha;
 
 public class Main {
 
 	public static void main(String[] args) {
+
+				
+		Campo campo = new CampoVelha();
+		Tabela tabela = new TabelaVelha(campo);				
+		Jogador player1 = new JogadorVelha();
+		Jogador player2 = new JogadorVelha();		
+		Validador validador = new ValidadorVelha();		
 		
-		
-		
-		
-		
-		
-		
-//		Random gerador = new Random();
-//		int comeco = gerador.nextInt(1);
-//				
-//		Campo campo = new CampoVelha();
-//		Tabela tabela = new TabelaVelha(campo);
-//				
-//		Jogador player1 = new JogadorVelha();
-//		Jogador player2 = new JogadorVelha();
-//		
-//		Validador validador = new ValidadorVelha();
-//		
-//		player1.init('X');
-//		player2.init('O');	
-//		
-//		tabela.setInTabela(player2, 2, 0);
-//		tabela.setInTabela(player2, 2, 2);
-//		tabela.setInTabela(player1, 1, 1);
-//		tabela.imprimir();
-//		
-//		System.out.println(validador.validarAll(tabela, player1));
-		
-		
-		
-		
-		
-		
+		player1.init('X');
+		player2.init('O');
+
+		JogoVelha janela = new JogoVelha(tabela, player1, player2, validador);
+		janela.setVisible(true);
 		
 
 	}

@@ -10,6 +10,12 @@ public interface Tabela {
 	
 	public void imprimir();
 	
+	public void setCampos(Campo campos[][]);
+	
+	public int getTamanho();
+	
+	
+	
 
 	
 	
