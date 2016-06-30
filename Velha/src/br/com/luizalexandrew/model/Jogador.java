@@ -4,6 +4,6 @@ public interface Jogador {
 		
 	public Character getMarca();
 	
-	public void init(Character marca);
+	public void setMarca(Character marca);
 
 }

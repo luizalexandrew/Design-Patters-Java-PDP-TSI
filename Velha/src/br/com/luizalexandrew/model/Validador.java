@@ -11,4 +11,5 @@ public interface Validador {
 	public boolean validarDiagonalEsquerda(Tabela tabela, Jogador player);
 	
 	public boolean validarDiagonalDireita(Tabela tabela, Jogador player);
+	
 }

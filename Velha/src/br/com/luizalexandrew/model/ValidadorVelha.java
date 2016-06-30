@@ -9,6 +9,8 @@ public class ValidadorVelha implements Validador {
 		
 		tamanho = tabela.getTamanho();
 		
+		tabela.imprimir();
+		
 		if(validarLinhas(tabela, player))
 			return true;
 		if(validarColunas(tabela, player))
@@ -38,9 +40,9 @@ public class ValidadorVelha implements Validador {
 				
 			if(resultado)
 				return resultado;		
-		}
-		
+		}		
 		return resultado;
+		
 	}
 
 	@Override
@@ -60,9 +62,9 @@ public class ValidadorVelha implements Validador {
 				
 			if(resultado)
 				return resultado;		
-		}
-		
+		}		
 		return resultado;
+		
 	}
 
 	@Override
@@ -74,9 +76,9 @@ public class ValidadorVelha implements Validador {
 			if(campos[i][i].getValue() != player.getMarca()){
 				return false;
 			}			
-		}
-		
+		}	
 		return true;
+		
 	}
 	
 	@Override
@@ -88,9 +90,9 @@ public class ValidadorVelha implements Validador {
 			if(campos[i][y].getValue() != player.getMarca()){
 				return false;
 			}
-		}
-			
+		}			
 		return true;
+		
 	}
 	
 }

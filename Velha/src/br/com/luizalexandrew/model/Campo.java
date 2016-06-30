@@ -4,12 +4,12 @@ public interface Campo {
 	
 	public void init();
 	
-	public boolean setMarca(Jogador player);
+	public Campo novo();
 	
-	public String getMarca();
+	public boolean setValue(Jogador player);
 	
 	public Character getValue();
 	
-	public Campo novo();
+	public String getMarca();
 
 }
